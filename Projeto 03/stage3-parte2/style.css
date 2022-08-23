@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #ECE9FD;
+  padding: 6.0rem 2.3rem 6.6rem;
+  font-size: 1.6rem;
+  font-family: 'Epilogue', sans-serif;
+
+}
+
+main{
+  max-width: 33.0rem;
+  margin: 0 auto;
+}
+
+:root{
+  font-size: 62.5%; /*10px */
+}
+
+h1{
+  font-weight: 800;
+  font-size: 4.0rem;
+  line-height: 4.8rem;
+  color: #090039;
+
+  margin-bottom: 1.5rem;
+}
+
+ul{
+  list-style: none;
+}
+
+main p:first-child{
+  color: #7158ef;
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  margin-bottom: 1.7rem;
+}
+
+h1 + p{
+  color: #0a0039;
+  line-height: 3.2rem;
+  opacity: 64%;
+  font-size: 1.6rem;
+
+  margin-bottom: 3.2rem;
+
+}
+
+a{
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  color:#090039;
+  text-decoration: none;
+
+}
+
+a:hover{
+  color: #432fba;
+  font-weight: bold;
+  
+}
+
+ul{
+  margin-top: 7.2rem;
+}
+
+ul li{
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color:#090039;
+
+  max-width: 25.7rem;
+  display: flex;
+  gap:3.8rem;
+
+}
+ul li span{
+  font-weight: 800;
+  font-size: 7.2rem;
+  line-height: 8.0rem;
+  letter-spacing: -2px;
+  color:#090039;
+}
+.second ul li + li{
+  margin-top: 3.2rem;
+}
+
+
+@media (min-width: 700px){
+  body{
+    padding: 8.0rem;
+  }
+  main{
+    max-width: 1020px;
+    display: flex;
+    gap:10rem;
+
+
+  }
+  .first{
+    max-width: 484px;
+  }
+  .second ul li{
+    gap: 5.4rem;
+    max-width: 500px;
+    align-items: center;
+  }
+
+}

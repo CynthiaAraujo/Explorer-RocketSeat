@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Mentoria</h1>
+      <p>Preencha o formulário abaixo para <br>agendar a sua mentoria</p>
+    </header>
+    <form id="my-form">
+      <div class="fieldset">
+        <h3>Informações Pessoais
+          <hr>
+        </h3>
+        <div class="name">
+          <div class="input-wrapper">
+            <label for="input-name">Nome</label>
+            <input type="text" required id="input-name">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-lastname">Sobrenome</label>
+            <input type="text" required id="input-lastname">
+          </div>
+        </div>
+        <div class="input-wrapper">
+          <label for="input-email">Email<span> (digite um email válido)</span></label>
+          <input type="email" required id="input-email">
+        </div>
+
+        <div class="input-wrapper">
+          <label for="input-password">Senha<span> (mínimo de 6 caracteres)</span></label>
+          <input type="password" required minlength="6" id="input-password">
+        </div>
+
+      </div>
+
+      <div class="fieldset">
+        <h3>Informações do Mentor
+          <hr>
+        </h3>
+        <div class="input-wrapper">
+          <label for="input-mentorname">Nome do seu mentor<span> (só o primeiro nome)</span></label>
+          <input type="text" required id="input-mentorname">
+        </div>
+      </div>
+
+      <div class="fieldset">
+        <h3>Seus horários disponíveis
+          <hr>
+          <h4>Primeira Mentoria</h4>
+        </h3>
+        <div class="name">
+          <div class="input-wrapper">
+            <label for="input-date">Data<span> (DD/MM/AAAA)</span></label>
+            <input type="date" required id="input-date">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-begin">Das</label>
+            <input type="time" required id="input-begin">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-end">Ate</label>
+            <input type="time" required id="input-end">
+          </div>
+        </div>
+      </div>
+
+      <div class="fieldset">
+        <h4>Segunda Mentoria</h4>
+        <div class="col-3">
+
+          <div class="input-wrapper">
+            <label for="input-date">Data<span> (DD/MM/AAAA) </span></label>
+            <input type="date" required id="input-date">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-begin">Das</label>
+            <input type="time" required id="input-begin">
+          </div>
+
+          <div class="input-wrapper">
+            <label for="input-end">Ate</label>
+            <input type="time" required id="input-end">
+          </div>
+        </div>
+      </div>
+    </form>
+    <footer>
+      <button type="submit" form="my-form" id="button">
+        <label for="button"> SALVAR </label>
+      </button>
+    </footer>
+  </div>
+</body>
+
+</html>
