@@ -84,3 +84,28 @@ console.log(undefined === null)
 
 */
 
+/* Variaveis: (precisa liberar memorial para alugar algum item)
+  - Nomes simbolicos apra receber algum valor;
+  - Atalhos de códigos;
+   - Identificadores;
+   - 3 palavras reservadas para criar variaveis:
+        * Var
+        * Let
+        * Const (Não pode atualizar é Constante)
+        * 
+ <script>
+  var clima="Quente"
+
+  clima="frio"
+
+  (tanto o let como o var pode atualizar)
+
+  console.log(clima)
+  </script>
+
+
+  String para sempre será string, nao posso mudar ela como pode exemplo para boolean, number...
+  JavaScript é tipado e dinãmico
+   */
+
+   
