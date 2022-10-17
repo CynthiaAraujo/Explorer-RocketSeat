@@ -106,6 +106,32 @@ console.log(undefined === null)
 
   String para sempre será string, nao posso mudar ela como pode exemplo para boolean, number...
   JavaScript é tipado e dinãmico
+
+  Const e let são locais e só funcionam no escopo onde foi criada.
    */
 
-   
+
+  /* Escopo determina a visibilidaded de alguma variavel no JS, toda vez que criar um bloco ( {}) ,
+  ele também vai criar um novo escopo.
+  
+  var funciona fora do escopo de bloco 
+  já let e const não funcionam*/
+
+  /* Nomeando variaveis:
+    - JS letras Maisculas e minusculas fazem diferença
+    - pode por aspas, acentuações que o JS aceita
+    - pode iniciar com caracteres especiais : $ e _;
+    - não pode começar com números;
+    - não pode colocoar espaços vazios no nome;
+  */
+ 
+  //   <script>
+  //   // declaration ou declaração de variaveis
+  //   var name
+  //   // assigment ou atribuiçaõ de valores
+  //   name = "Myke"
+  
+  //   //que tipo de dado foi usado
+  //   console.log(typeof name)
+  
+  // </script>

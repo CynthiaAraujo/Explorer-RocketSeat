@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-image: url(./Fundo.jpg);
+  background-position: top center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #121214;
+  margin: auto;
+
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  max-width: 58rem;
+  width: 90%;
+  margin: 3.2rem auto;
+  display: grid;
+  gap: 2.4rem;
+}
+
+.page {
+  color: #ffffff;
+  /* padding: 3.2rem 31rem 4.4rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin: auto; */
+}
+
+header {
+  padding-top: 3.2rem;
+  height: calc(12rem+3.2rem);
+}
+
+header div {
+  width: 12rem;
+  margin: auto;
+  background-image: linear-gradient(90deg, #9572fc, #43e7ad, #e2d45c);
+  border-radius: 50%;
+
+  display: flex;
+  padding: 4px;
+
+  transition: transform 0.3s;
+}
+
+header div:hover {
+  transform: scale(1.2);
+}
+
+header img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 160%;
+  padding: 0;
+}
+
+p {
+  color: #a1a1aa;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-bottom: 2.4rem;
+}
+
+.games,
+.channels,
+.networks {
+  background: #2a2634;
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem;
+  padding: 2.4rem 3.2rem 3.2rem;
+  border-top: 4px solid;
+  border-image: linear-gradient(90deg, #9572fc, #43e7ad, #e2d45c) 1;
+  -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  padding-top: 4px;
+}
+.games {
+  height: 26.4rem;
+}
+
+.channels {
+  height: 21.4rem;
+}
+
+.networks {
+  height: 17.6rem;
+}
+
+section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2.4rem;
+  width: 30.2rem;
+  height: 12rem;
+}
+
+section ul li {
+  transition: transform 0.3s;
+}
+section ul li:hover {
+  transform: scale(1.1);
+}
+
+.games ul li img {
+  width: 9rem;
+  height: 12rem;
+}
+
+.channels ul,
+.networks ul {
+  width: 32.8rem;
+  height: 7rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+}
+
+.networks ul {
+  width: 17.7rem;
+  height: 3.2rem;
+}
+
+.channels ul li img {
+  width: 7rem;
+  height: 7rem;
+  border: 1px solid #443e54;
+  border-radius: 50%;
+}
+
+/* animation */
+header div {
+  animation: fromTOp 0.7s 1 backwards;
+}
+
+@keyframes fromTOp {
+  from {
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
